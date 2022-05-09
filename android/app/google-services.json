@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "847494511476",
+    "firebase_url": "https://gazelist-app-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "gazelist-app",
+    "storage_bucket": "gazelist-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:847494511476:android:0306b16029416f884f8a21",
+        "android_client_info": {
+          "package_name": "com.example.gazelist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "847494511476-jirmo72pcnnu25tt5ca8a0mq8en5nt8k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr-eRyJdtOUY1Ru-SDk53M-jeax3ymuGk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "847494511476-jirmo72pcnnu25tt5ca8a0mq8en5nt8k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "847494511476-5i4h5p48auqhoe6vlbo0p5tf7646d627.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "dev.dvoracek.gazelist"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -35,4 +35,35 @@ class DefaultFirebaseOptions {
         );
     }
   }
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyB6-nx7LIJ5Z34StIpEwoSyO-IPHnVOfWY',
+    appId: '1:847494511476:web:072351b8a68baf914f8a21',
+    messagingSenderId: '847494511476',
+    projectId: 'gazelist-app',
+    authDomain: 'gazelist-app.firebaseapp.com',
+    databaseURL: 'https://gazelist-app-default-rtdb.europe-west1.firebasedatabase.app',
+    storageBucket: 'gazelist-app.appspot.com',
+    measurementId: 'G-4P4126PNHF',
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyDr-eRyJdtOUY1Ru-SDk53M-jeax3ymuGk',
+    appId: '1:847494511476:android:0306b16029416f884f8a21',
+    messagingSenderId: '847494511476',
+    projectId: 'gazelist-app',
+    databaseURL: 'https://gazelist-app-default-rtdb.europe-west1.firebasedatabase.app',
+    storageBucket: 'gazelist-app.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'AIzaSyDLK43Vkq7A-yz_1oW-mhlHoecgaTXNFVM',
+    appId: '1:847494511476:ios:1bdf566fb14a3dc84f8a21',
+    messagingSenderId: '847494511476',
+    projectId: 'gazelist-app',
+    databaseURL: 'https://gazelist-app-default-rtdb.europe-west1.firebasedatabase.app',
+    storageBucket: 'gazelist-app.appspot.com',
+    iosClientId: '847494511476-dh3ugitmao6u3jtp19iqg0mr0apmejlu.apps.googleusercontent.com',
+    iosBundleId: 'com.example.gazelist',
+  );
 }
