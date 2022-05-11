@@ -4,7 +4,7 @@ class TaskList {
   final String description;
   final DateTime created;
 
-  final List<String> owners;
+  final Map<String, bool> owners;
 
   TaskList(this.id, this.title, this.description, this.created, this.owners);
 

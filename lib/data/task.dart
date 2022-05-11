@@ -10,8 +10,8 @@ class Task {
   final DateTime created;
   final DateTime finished;
 
-  final List<String> attachments;
-  final List<String> lists;
+  final Map<String, bool> attachments;
+  final Map<Stream, bool> lists;
 
   String? timeNotification;
   String? locationNotification;
