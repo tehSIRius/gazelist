@@ -1,6 +1,7 @@
 import 'package:firebase_database/firebase_database.dart';
-import '../data/task.dart';
-import '../data/user.dart';
+
+import 'package:gazelist/model/task.dart';
+import 'package:gazelist/model/user.dart';
 
 class TaskDao {
   final DatabaseReference _taskRef =

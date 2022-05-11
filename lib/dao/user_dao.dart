@@ -1,5 +1,6 @@
 import 'package:firebase_database/firebase_database.dart';
-import '../data/user.dart';
+
+import 'package:gazelist/model/user.dart';
 
 class UserDao {
   final DatabaseReference _userRef =

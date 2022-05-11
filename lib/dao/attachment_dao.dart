@@ -1,5 +1,6 @@
 import 'package:firebase_database/firebase_database.dart';
-import '../data/attachment.dart';
+
+import 'package:gazelist/model/attachment.dart';
 
 class AttachmentDao {
   final DatabaseReference _attachmentRef =

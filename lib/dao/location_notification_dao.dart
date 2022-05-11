@@ -1,5 +1,6 @@
 import 'package:firebase_database/firebase_database.dart';
-import '../data/location_notification.dart';
+
+import 'package:gazelist/model/location_notification.dart';
 
 class LocationNotificationDao {
   final DatabaseReference _locationNotificationRef =

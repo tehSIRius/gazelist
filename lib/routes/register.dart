@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:uuid/uuid.dart';
 
 import 'package:gazelist/utils/auth.dart';
 import 'package:gazelist/utils/validator.dart';
+import 'package:gazelist/dao/user_dao.dart';
+import 'package:gazelist/model/user.dart' as _model;
 
 import 'package:gazelist/routes/home.dart';
 
@@ -23,6 +26,8 @@ class _RegisterPageState extends State<RegisterPage> {
   final _focusName = FocusNode();
   final _focusEmail = FocusNode();
   final _focusPassword = FocusNode();
+
+  final _uuid = const Uuid();
 
   bool _loading = false;
 
@@ -48,6 +53,12 @@ class _RegisterPageState extends State<RegisterPage> {
       });
 
       if (user != null) {
+        var userModel = _model.User(
+            _uuid.v5(Uuid.NAMESPACE_URL, 'dvoracek.dev'),
+            _emailContextController.text);
+        var dao = UserDao();
+        dao.saveUser(userModel);
+
         Navigator.of(context).pushAndRemoveUntil(
             MaterialPageRoute(builder: (context) => HomePage()),
             ModalRoute.withName('/'));

@@ -1,5 +1,6 @@
 import 'package:firebase_database/firebase_database.dart';
-import '../data/time_notification.dart';
+
+import 'package:gazelist/model/time_notification.dart';
 
 class TimeNotificationDao {
   final DatabaseReference _timeNotificationRef =
