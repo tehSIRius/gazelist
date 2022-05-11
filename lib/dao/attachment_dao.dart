@@ -10,6 +10,14 @@ class AttachmentDao {
     _attachmentRef.push().set(attachment.toJson());
   }
 
+  void updateAttachment(Attachment attachment) {
+    _attachmentRef.update(attachment.toJson());
+  }
+
+  void deleteAttachment(Attachment attachment) {
+    _attachmentRef.child(attachment.id).remove();
+  }
+
   Query getAttachmentQuery() {
     return _attachmentRef;
   }

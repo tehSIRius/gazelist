@@ -12,7 +12,7 @@ class TimeNotification {
         recurring = json['recurring'],
         period = DateTime.fromMillisecondsSinceEpoch(json['period']);
 
-  Map<dynamic, dynamic> toJson() => <dynamic, dynamic>{
+  Map<String, Object?> toJson() => <String, Object?>{
         'id': id,
         'time': time.millisecondsSinceEpoch,
         'recurring': recurring,

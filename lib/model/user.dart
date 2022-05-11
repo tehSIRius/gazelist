@@ -8,6 +8,6 @@ class User {
       : id = json['id'],
         username = json['username'];
 
-  Map<dynamic, dynamic> toJson() =>
-      <dynamic, dynamic>{'id': id, 'username': username};
+  Map<String, Object?> toJson() =>
+      <String, Object?>{'id': id, 'username': username};
 }

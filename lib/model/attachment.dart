@@ -8,6 +8,6 @@ class Attachment {
       : id = json['id'],
         resourceId = json['resourceId'];
 
-  Map<dynamic, dynamic> toJson() =>
-      <dynamic, dynamic>{'id': id, 'resourceId': resourceId};
+  Map<String, Object?> toJson() =>
+      <String, Object?>{'id': id, 'resourceId': resourceId};
 }

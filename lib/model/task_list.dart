@@ -15,7 +15,7 @@ class TaskList {
         created = DateTime.fromMillisecondsSinceEpoch(json['created']),
         owners = json['owners'];
 
-  Map<dynamic, dynamic> toJson() => <dynamic, dynamic>{
+  Map<String, Object?> toJson() => <String, Object?>{
         'id': id,
         'title': title,
         'description': description,

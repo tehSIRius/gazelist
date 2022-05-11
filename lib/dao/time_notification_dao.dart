@@ -10,6 +10,14 @@ class TimeNotificationDao {
     _timeNotificationRef.push().set(timeNotification.toJson());
   }
 
+  void updateTimeNotification(TimeNotification timeNotification) {
+    _timeNotificationRef.update(timeNotification.toJson());
+  }
+
+  void deleteTimeNotification(TimeNotification timeNotification) {
+    _timeNotificationRef.child(timeNotification.id).remove();
+  }
+
   Query getTimeNotification() {
     return _timeNotificationRef;
   }

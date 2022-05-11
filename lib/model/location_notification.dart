@@ -10,7 +10,7 @@ class LocationNotification {
         location = json['location'],
         radius = json['radius'];
 
-  Map<dynamic, dynamic> toJson() => <dynamic, dynamic>{
+  Map<String, Object?> toJson() => <String, Object?>{
         'id': id,
         'location': location,
         'radius': radius,

@@ -40,7 +40,7 @@ class Task {
         timeNotification = json['timeNotification'],
         locationNotification = json['locationNotification'];
 
-  Map<dynamic, dynamic> toJson() => <dynamic, dynamic>{
+  Map<String, Object?> toJson() => <String, Object?>{
         'id': id,
         'title': title,
         'content': content,

@@ -11,6 +11,14 @@ class TaskDao {
     _taskRef.push().set(task.toJson());
   }
 
+  void updateTask(Task task) {
+    _taskRef.update(task.toJson());
+  }
+
+  void deleteTask(Task task) {
+    _taskRef.child(task.id).remove();
+  }
+
   Stream<DatabaseEvent> getUsersTask(User user) {
     return _taskRef.orderByChild('owner').equalTo(user.id).onValue;
   }
