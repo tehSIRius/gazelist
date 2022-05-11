@@ -1,12 +1,10 @@
-import 'dart:ffi';
-
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:gazelist/utils/auth.dart';
 import 'package:gazelist/utils/validator.dart';
 
-import 'package:gazelist/routes/homepage.dart';
+import 'package:gazelist/routes/home.dart';
 import 'package:gazelist/routes/register.dart';
 
 class LoginPage extends StatefulWidget {
@@ -31,8 +29,8 @@ class _LoginPageState extends State<LoginPage> {
     User? user = FirebaseAuth.instance.currentUser;
 
     if (user != null) {
-      Navigator.of(context)
-          .pushReplacement(MaterialPageRoute(builder: (context) => HomePage()));
+      Navigator.of(context).pushReplacement(
+          MaterialPageRoute(builder: (context) => const HomePage()));
     }
   }
 
@@ -58,7 +56,7 @@ class _LoginPageState extends State<LoginPage> {
 
       if (user != null) {
         Navigator.of(context).pushReplacement(
-            MaterialPageRoute(builder: (context) => HomePage()));
+            MaterialPageRoute(builder: (context) => const HomePage()));
       }
     }
   }

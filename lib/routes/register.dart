@@ -60,7 +60,7 @@ class _RegisterPageState extends State<RegisterPage> {
         dao.saveUser(userModel);
 
         Navigator.of(context).pushAndRemoveUntil(
-            MaterialPageRoute(builder: (context) => HomePage()),
+            MaterialPageRoute(builder: (context) => const HomePage()),
             ModalRoute.withName('/'));
       }
     }
